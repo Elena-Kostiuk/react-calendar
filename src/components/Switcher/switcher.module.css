@@ -1,0 +1,35 @@
+.switcher {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+.nav-btn {
+  border: none;
+  background-color: rgba(240, 248, 255, 0);
+  padding: 0;
+  font-size: 1.3em;
+  margin: 0;
+  font-weight: 600;
+  color: grey;
+}
+.chose-month {
+  font-size: 1.6rem;
+  padding-top: 0;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .chose-month {
+    font-size: 1.4rem;
+  }
+  .switcher {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .switcher {
+    width: 80%;
+  }
+}

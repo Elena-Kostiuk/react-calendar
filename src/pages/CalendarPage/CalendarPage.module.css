@@ -1,0 +1,42 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.calendar {
+  width: 70vw;
+  height: 80vh;
+  background-color: rgb(38, 165, 165);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 2em;
+}
+.month-container {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  color: rgb(38, 165, 165);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 0;
+  font-family: "Barlow", sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  .calendar {
+    flex-direction: column;
+    padding: 1.7em;
+    min-height: 600px;
+  }
+  .month-container {
+    width: 100%;
+    height: 60%;
+    padding: 1em 0;
+    justify-content: center;
+  }
+}
